@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components/macro";
 import logo from '../../../assets/icons/logo.svg';
 import MoonIcon from '../../../assets/icons/moon.png';
 import SunIcon from '../../../assets/icons/sun.png';

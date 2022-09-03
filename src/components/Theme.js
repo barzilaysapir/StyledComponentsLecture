@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/macro";
 
 const themes = {
     dark: {

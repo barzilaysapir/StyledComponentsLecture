@@ -1,4 +1,4 @@
-import { useTheme } from 'styled-components';
+import { useTheme } from "styled-components/macro";
 import { Button, Link } from '../../common';
 import { Logo, StyledHome, ThemeIcon } from './Home.styled';
 
