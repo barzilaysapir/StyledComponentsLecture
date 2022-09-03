@@ -1,6 +1,5 @@
 import { useTheme } from 'styled-components';
-import { Button } from '../../common/Button.styled';
-import { Link } from '../../common/Link.styled';
+import { Button, Link } from '../../common';
 import { Logo, StyledHome, ThemeIcon } from './Home.styled';
 
 const Home = props => {
