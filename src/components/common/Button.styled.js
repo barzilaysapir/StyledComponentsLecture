@@ -1,9 +1,8 @@
-import styled from "styled-components/macro";
+import styled, { css } from "styled-components/macro";
 
 export const Button = styled.button.attrs({
     type: 'button'
 })`
-    color: ${({ theme }) => theme.secondary};
     border: 1px solid currentColor;
     background-color: transparent;
     border-radius: 5px;
@@ -11,4 +10,15 @@ export const Button = styled.button.attrs({
     font-family: inherit;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s;
+    
+    ${({ theme: { primary, secondary} }) => css`
+        color: ${secondary};
+
+        &:hover {
+            color: ${primary};
+            background-color: ${secondary};
+            border-color: ${secondary};
+        }
+    `}
 `;
