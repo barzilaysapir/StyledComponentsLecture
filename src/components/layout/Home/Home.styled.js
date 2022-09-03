@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+import logo from '../../../assets/icons/logo.svg';
 
 export const StyledHome = styled.div`
   background-color: #282c34;
@@ -20,7 +21,10 @@ const LogoSpin = keyframes`
   }
 `;
 
-export const Logo = styled.img`
+export const Logo = styled.img.attrs({
+  src: logo,
+  alt: "logo"
+})`
   height: 40vmin;
   pointer-events: none;
   @media (prefers-reduced-motion: no-preference) {
