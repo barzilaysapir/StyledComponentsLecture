@@ -11,4 +11,5 @@ export const StyledNavbar = styled.nav`
 export const NavLink = styled(Link)`
     padding: 20px 0;
     font-weight: 600;
+    text-decoration: none;
 `;
