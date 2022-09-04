@@ -9,13 +9,13 @@ const Navbar = props => {
             <NavLink
                 as={RouterLink}
                 to="/"
-                isActive={pathname === '/'}>
+                $isActive={pathname === '/'}>
                 Home
             </NavLink>
             <NavLink
                 as={RouterLink}
                 to="/about"
-                isActive={pathname === '/about'}>
+                $isActive={pathname === '/about'}>
                 About
             </NavLink>
         </StyledNavbar>

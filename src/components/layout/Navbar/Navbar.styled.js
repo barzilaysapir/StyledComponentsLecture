@@ -14,7 +14,7 @@ export const NavLink = styled(Link)`
     font-weight: 600;
     text-decoration: none;
 
-    ${({ isActive }) => isActive && css`
+    ${({ $isActive }) => $isActive && css`
         text-decoration: underline;
         font-size: 17px;
     `}
