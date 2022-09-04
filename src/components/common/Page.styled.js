@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components/macro";
 
-const StyledPage = styled.div`
+export const StyledPage = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,5 +9,3 @@ const StyledPage = styled.div`
   color: ${({ theme }) => theme.secondary};
   background-color: ${({ theme }) => theme.primary};
 `;
-
-export default StyledPage;

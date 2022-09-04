@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components/macro";
 import logo from '../../../assets/icons/logo.svg';
 import MoonIcon from '../../../assets/icons/moon.png';
 import SunIcon from '../../../assets/icons/sun.png';
-import StyledPage from "../../common/Page.styled";
+import { StyledPage } from "../../common";
 
 export const StyledHome = styled(StyledPage)`
   font-size: calc(10px + 2vmin);
