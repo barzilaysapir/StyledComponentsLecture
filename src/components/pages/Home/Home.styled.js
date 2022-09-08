@@ -1,15 +1,17 @@
 import styled, { keyframes } from "styled-components/macro";
 import logo from '../../../assets/icons/logo.svg';
+import SunIcon from '../../../assets/icons/sun.png';
+import MoonIcon from '../../../assets/icons/moon.png';
 
 export const StyledHome = styled.div`
-  background-color: #282c34;
+  background-color: ${({ theme }) => theme.primary};
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: ${({ theme }) => theme.secondary};
 `;
 
 const LogoSpin = keyframes`
@@ -30,4 +32,23 @@ export const Logo = styled.img.attrs({
     @media (prefers-reduced-motion: no-preference) {
         animation: ${LogoSpin} infinite 20s linear;
     }
+`;
+
+export const ThemeIcon = styled.img.attrs(({ themeId }) => {
+  const icon = themeId === 'dark' ? {
+    name: 'sun',
+    img: SunIcon
+  } : {
+    name: 'moon',
+    img: MoonIcon
+  };
+
+  return {
+    src: icon.img,
+    alt: icon.name + ' icon'
+  }
+})`
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 5px;
 `;
