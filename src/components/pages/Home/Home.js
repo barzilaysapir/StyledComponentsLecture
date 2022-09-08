@@ -1,5 +1,5 @@
 import { useTheme } from 'styled-components/macro';
-import Link from '../../common/Link.styled';
+import { Button, Link } from '../../common';
 import { Logo, StyledHome, ThemeIcon } from './Home.styled';
 
 const Home = props => {
@@ -7,10 +7,10 @@ const Home = props => {
 
     return (
         <StyledHome>
-            <button type='button' onClick={toggleTheme}>
+            <Button onClick={toggleTheme}>
                 Toggle Theme
                 <ThemeIcon themeId={id} />
-            </button>
+            </Button>
 
             <Logo />
             <p>

@@ -49,6 +49,6 @@ export const ThemeIcon = styled.img.attrs(({ themeId }) => {
   }
 })`
   height: 20px;
-  vertical-align: middle;
+  vertical-align: bottom;
   margin-left: 5px;
 `;
