@@ -2,16 +2,11 @@ import styled, { keyframes } from "styled-components/macro";
 import logo from '../../../assets/icons/logo.svg';
 import SunIcon from '../../../assets/icons/sun.png';
 import MoonIcon from '../../../assets/icons/moon.png';
+import { StyledPage } from "../../common";
 
-export const StyledHome = styled.div`
-  background-color: ${({ theme }) => theme.primary};
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+export const StyledHome = styled(StyledPage)`
   font-size: calc(10px + 2vmin);
-  color: ${({ theme }) => theme.secondary};
+  justify-content: center;
 `;
 
 const LogoSpin = keyframes`
