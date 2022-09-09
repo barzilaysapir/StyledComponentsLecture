@@ -1,7 +1,7 @@
 import GlobalStyle from './components/GlobalStyle';
 import Home from './components/pages/Home/Home';
 import Theme from './components/Theme';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './components/pages/About/About';
 import Navbar from './components/pages/Navbar/Navbar';
 
@@ -10,11 +10,14 @@ function App() {
     <Theme>
       <GlobalStyle />
 
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={Home} />
-        <Route path='/about' component={About} />
-      </Switch>
+      <BrowserRouter>
+        <Navbar />
+
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </BrowserRouter>
 
     </Theme>
   );
